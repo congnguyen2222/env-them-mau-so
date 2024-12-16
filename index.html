@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm mẫu sổ</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+</head>
+
+<body>
+    <!-- Dùng js để hiện và ẩn modal  -->
+    <div class="qi-modal-sign-signature-profile f-center">
+        <div class="qi-box-modal-signature-profile">
+            <div class="qi-head-modal-signature-profile flex j-between ai-center">
+                <div class="flex ai-center">
+                    <div class="qi-rouded-bg-file">
+                        <img src="image/material-text-snippet.svg" alt="" />
+                    </div>
+                    <p class="qi-text-head-signature-profile">Thêm mẫu sổ</p>
+                </div>
+                <div class="qi-rouded-bg-head-signature-profile">
+                    <img src="image/closeIcon.svg" alt="" />
+                </div>
+            </div>
+            <div class="qi-body-modal-signature-profile">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a data-toggle="tab" href="#tab1">1. Thông tin chung</a>
+                    </li>
+                    <li><a data-toggle="tab" href="#tab2">2. Định dạng tệp</a></li>
+                    <li><a data-toggle="tab" href="#tab3">3. Đối tượng nộp</a></li>
+                    <li><a data-toggle="tab" href="#tab4">4. Đối tượng ký duyệt</a></li>
+                    <li><a data-toggle="tab" href="#tab5">5. Đối tượng tra cứu</a></li>
+                </ul>
+
+                <div class="tab-content qi-tab-content-signature-profile-2">
+                    <div id="tab1" class="tab-pane fade in active qi-tab-signature-profile">
+                        <div class="flex f-col j-center ai-center" style="width: 80%; margin: 0 auto; height: 100%">
+                            <div class="qi-signature-profile-tab1">
+                                <div class="qi-signature-profile-tab1-body">
+                                    <div class="qi-signature-profile-action-file flex ai-center j-between"></div>
+                                    <div class="form-container qi-custom-form-container-signature-profile">
+                                        <div class="full-width">
+                                            <!-- ẩn hiện ui required bằng cách thêm class hidden vào thẻ span chứa class qi-star-tag, mặc định hiện -->
+                                            <p class="qi-text-label-input-signature-profile">
+                                                Tên mẫu sổ <span class="qi-star-tag">*</span>
+                                            </p>
+                                            <input class="qi-text-label-main-input-signature-profile" type="text" />
+                                        </div>
+                                        <!-- Đối tượng sử dụng -->
+                                        <div class="form-group form-group-custom-signature-profile">
+                                            <label for="period">Đối tượng sử dụng</label>
+                                            <select id="period">
+                                                <option value="week1">Giáo viên</option>
+                                                <option value="week2">Tuần 2 - Tháng 12/2024</option>
+                                            </select>
+                                        </div>
+                                        <!-- Trạng thái sử dụng -->
+                                        <div class="form-group form-group-custom-signature-profile">
+                                            <label for="teacher">Trạng thái sử dụng</label>
+                                            <select id="teacher2">
+                                                <option value="teacher1">Đang sử dụng</option>
+                                                <option value="teacher2">Nguyễn Văn A</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-custom-signature-profile">
+                                            <label for="grade">Tầng suất nộp</label>
+                                            <select id="grade">
+                                                <option value="grade9">1 lần/tuần</option>
+                                                <option value="grade10">Khối 10</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-custom-signature-profile">
+                                            <label for="subject">Thứ tự hiện thị</label>
+                                            <select id="subject">
+                                                <option value="tech">9</option>
+                                                <option value="math">Toán</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-custom-signature-profile">
+                                            <label for="grade">Từ ngày</label>
+                                            <select id="grade">
+                                                <option value="grade9">1 lần/tuần</option>
+                                                <option value="grade10">Khối 10</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-custom-signature-profile">
+                                            <label for="subject">Đến ngày</label>
+                                            <select id="subject">
+                                                <option value="tech">9</option>
+                                                <option value="math">Toán</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-custom-signature-profile">
+                                            <label for="grade">Cấu hình đóng dấu</label>
+                                            <select id="grade">
+                                                <option value="grade9">Đóng dấu ban hành</option>
+                                                <option value="grade10">Khối 10</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-custom-signature-profile">
+                                            <label for="subject">Kiểm định chất lượng</label>
+                                            <select id="subject">
+                                                <option value="tech">Tất cả</option>
+                                                <option value="math">Toán</option>
+                                            </select>
+                                        </div>
+                                        <!-- Ghi chú -->
+                                        <div class="form-group form-group-custom-signature-profile"></div>
+                                    </div>
+                                    <div class="qi-sinature-profile-checkBox">
+                                        <div class="qi-sinature-profile-checkBox-top">
+                                            <input type="checkbox" id="subscribeNews" />
+                                            <label for="subscribeNews">Cho phép người nộp tùy chọn nhân sự ký
+                                                duyệt</label>
+                                        </div>
+                                        <div class="qi-sinature-profile-checkBox-bottom">
+                                            <input type="checkbox" id="subscribeNews" />
+                                            <label for="subscribeNews">Cấu hình đối tượng tra cứu</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-pane fade qi-tab-signature-profile">
+                        <div class="flex f-col j-center ai-center" style="width: 80%; margin: 0 auto; height: 100%">
+                            <div class="qi-signature-profile-tab2">
+                                <p>
+                                    <strong class="qi-signature-profile-tab2-text">Lưu ý:</strong>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <em>Hồ sơ ký điện tử chỉ hỗ trợ tệp định dạng
+                                            <span class="qi-signature-tab2-highlight">PDF</span></em>
+                                    </li>
+                                    <li>
+                                        <em>Hồ sơ chèn ảnh ký chỉ hỗ trợ tệp định dạng
+                                            <span class="qi-signature-tab2-highlight">PDF</span></em>
+                                    </li>
+                                </ul>
+
+                                <label class="qi-signature-tab2-checkbox-container qi-signature-tab2-select-all">
+                                    <input type="checkbox" id="selectAll" /> Chọn tất cả
+                                </label>
+
+                                <div class="qi-signature-tab2-file-options">
+                                    <label class="qi-signature-tab2-checkbox-container">
+                                        <input type="checkbox" /> .DOC, .DOCX (Microsoft Word)
+                                    </label>
+                                    <label class="qi-signature-tab2-checkbox-container">
+                                        <input type="checkbox" checked /> .PDF (File PDF)
+                                    </label>
+                                    <label class="qi-signature-tab2-checkbox-container">
+                                        <input type="checkbox" /> .XLS, .XLSX (Microsoft Word)
+                                    </label>
+                                    <label class="qi-signature-tab2-checkbox-container">
+                                        <input type="checkbox" /> .JPEG (Ảnh)
+                                    </label>
+                                    <label class="qi-signature-tab2-checkbox-container">
+                                        <input type="checkbox" /> .PPT, .PPTX (Microsoft Excel)
+                                    </label>
+                                    <label class="qi-signature-tab2-checkbox-container">
+                                        <input type="checkbox" /> .PNG (Ảnh)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-pane fade qi-tab-signature-profile">
+                        <div class="flex f-col j-center ai-center" style="width: 80%; margin: 0 auto; height: 100%">
+                            <div class="qi-signature-profile-tab3">
+                                <div class="qi-signature-profile-button-tab flex ai-start j-end">
+                                    <div class="qi-signature-profile-button-submit-and-save-3">
+                                        <img src="image/plus.svg" alt="" />
+                                        <p class="qi-text-signature-profile-button-submit4">Thêm đối tượng</p>
+                                    </div>
+                                </div>
+                                <div class="fixTableHead qi-signature-profile-fixTableHead">
+                                    <table
+                                        class="table table-bordered table-striped table-hover qi-signature-profile-tab3-table">
+                                        <thead class="theadMain">
+                                            <tr class="text-center">
+                                                <th class="thLabelHeader">STT</th>
+                                                <th class="thLabelHeader th-left">Loại đối tượng</th>
+                                                <th class="thLabelHeader th-left">Người ký</th>
+                                                <th class="thLabelHeader">Xóa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbodyMain">
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab4" class="tab-pane fade qi-tab-signature-profile">
+                        <div class="flex f-col j-center ai-center" style="width: 80%; margin: 0 auto; height: 100%">
+                            <div class="qi-signature-profile-tab4">
+                                <div class="qi-signature-profile-button-tab flex ai-start j-end">
+                                    <div class="qi-signature-profile-button-submit-and-save-3">
+                                        <img src="image/plus.svg" alt="" />
+                                        <p class="qi-text-signature-profile-button-submit4">Thêm đối tượng</p>
+                                    </div>
+                                </div>
+                                <div class="fixTableHead qi-signature-profile-fixTableHead">
+                                    <table
+                                        class="table table-bordered table-striped table-hover qi-signature-profile-tab4-table">
+                                        <thead class="theadMain">
+                                            <tr class="text-center">
+                                                <th class="thLabelHeader">STT</th>
+                                                <th class="thLabelHeader th-left">Loại đối tượng</th>
+                                                <th class="thLabelHeader th-left">Người ký</th>
+                                                <th class="thLabelHeader">Ký điện tử</th>
+                                                <th class="thLabelHeader">Sửa</th>
+                                                <th class="thLabelHeader">Xóa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbodyMain">
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab5" class="tab-pane fade qi-tab-signature-profile">
+                        <div class="flex f-col j-center ai-center" style="width: 80%; margin: 0 auto; height: 100%">
+                            <div class="qi-signature-profile-tab5">
+                                <div class="qi-signature-profile-button-tab flex ai-start j-end">
+                                    <div class="qi-signature-profile-button-submit-and-save-3">
+                                        <img src="image/plus.svg" alt="" />
+                                        <p class="qi-text-signature-profile-button-submit4">Thêm đối tượng</p>
+                                    </div>
+                                </div>
+                                <div class="fixTableHead qi-signature-profile-fixTableHead">
+                                    <table
+                                        class="table table-bordered table-striped table-hover qi-signature-profile-tab4-table">
+                                        <thead class="theadMain">
+                                            <tr class="text-center">
+                                                <th class="thLabelHeader">STT</th>
+                                                <th class="thLabelHeader th-left">Loại đối tượng</th>
+                                                <th class="thLabelHeader th-left">Người ký</th>
+                                                <th class="thLabelHeader">Ký điện tử</th>
+                                                <th class="thLabelHeader">Sửa</th>
+                                                <th class="thLabelHeader">Xóa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tbodyMain">
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                            <!-- Row 1 -->
+                                            <tr>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">1</div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Nhóm quyền</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="td-left">
+                                                        <p>Giáo viên bộ môn</p>
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center tdHeightCheckBox">
+                                                        <input type="checkbox" class="inputCheckbox" />
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/iconEdit.svg" alt="">
+                                                    </div>
+                                                </td>
+                                                <td style="height: 1px">
+                                                    <div class="f-center">
+                                                        <img src="image/delete.svg" alt="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end Row 1 -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="qi-button-signature-submit flex j-end ai-center">
+                <div class="qi-signature-profile-button-close">
+                    <p class="qi-text-signature-profile-button-submit1">Đóng</p>
+                </div>
+
+                <div class="qi-signature-profile-button-submit-and-save">
+                    <p class="qi-text-signature-profile-button-submit3">Ghi</p>
+                    <img src="image/arrow-left.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

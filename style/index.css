@@ -1,0 +1,628 @@
+.qi-modal-sign-signature-profile {
+    width: 100%;
+    height: 100vh;
+    background: #bdbdbd38;
+}
+
+.qi-box-modal-signature-profile {
+    width: 60vw;
+    height: 90vh;
+    background: #f8f7f7;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    position: relative;
+}
+
+.qi-head-modal-signature-profile {
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    z-index: 111;
+    padding: 10px 20px;
+}
+
+.qi-text-head-signature-profile {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #323743FF;
+}
+
+.qi-rouded-bg-head-signature-profile {
+    padding: 12px !important;
+    background: #F3F4F6FF;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+    cursor: pointer;
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transform: scale(.7) !important;
+    -webkit-transform: scale(.7) !important;
+    -moz-transform: scale(.7) !important;
+    -ms-transform: scale(.7) !important;
+    -o-transform: scale(.7) !important;
+}
+
+.qi-rouded-bg-head-signature-profile:hover {
+    background: rgba(187, 189, 192, 0.418)
+}
+
+.qi-body-modal-signature-profile {
+    height: calc(100% - 120px);
+    width: 100%;
+    padding: 10px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.nav-tabs>li>a {
+    color: #929292;
+    font-weight: bold;
+    border: none;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    color: #1E64DDFF;
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.nav-tabs>li.active>a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #1E64DDFF;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.qi-rouded-bg-file {
+    padding: 10px;
+    background: #FEF9EEFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    margin-right: 8px;
+}
+
+.qi-tab-content-signature-profile-2 {
+    width: 100%;
+    height: 88%;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.qi-signature-profile-tab1-body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.qi-signature-profile-tab1-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.qi-signature-profile-tab1-body::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border-radius: 10px;
+}
+
+.qi-signature-profile-tab1-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.qi-signature-profile-tab1-body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.qi-body-modal-signature-profile::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.qi-body-modal-signature-profile::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.qi-body-modal-signature-profile::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border-radius: 10px;
+}
+
+.qi-body-modal-signature-profile::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.qi-body-modal-signature-profile::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.qi-tab-signature-profile::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.qi-tab-signature-profile::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border-radius: 10px;
+}
+
+.qi-tab-signature-profile::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.qi-tab-signature-profile {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.qi-button-signature-submit {
+    height: 50px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    z-index: 1111;
+    border-top: 1px solid #F3F4F6FF;
+}
+
+.qi-signature-profile-button-submit {
+    width: 106px;
+    height: 30px;
+    background: #F3F4F6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    gap: 2px;
+    margin-left: 8px;
+}
+
+.qi-signature-profile-button-submit-and-save {
+    width: 106px;
+    height: 30px;
+    background: #1E64DDFF;
+    gap: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.qi-signature-profile-button-submit-and-save-2 {
+    width: 106px;
+    height: 30px;
+    background: #1E64DDFF;
+    gap: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+.qi-signature-profile-button-submit-and-save-2 img {
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+.qi-signature-profile-button-submit-and-save-2:hover {
+    background: rgba(41, 108, 225, 0.875);
+}
+
+.qi-signature-profile-button-submit:hover {
+    background: rgb(213, 216, 221);
+}
+
+.qi-signature-profile-button-submit-and-save:hover {
+    background: rgba(41, 108, 225, 0.875);
+}
+
+
+.qi-signature-profile-button-close:hover {
+    background: rgb(213, 216, 221);
+}
+
+.qi-signature-profile-button-submit img {
+    transform: scale(.7);
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    -ms-transform: scale(.7);
+    -o-transform: scale(.7);
+}
+
+.qi-signature-profile-button-close {
+    background: #F3F4F6FF;
+    width: 106px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.qi-text-signature-profile-button-submit1 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #565D6DFF;
+}
+
+.qi-text-signature-profile-button-submit3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+}
+
+.qi-text-signature-profile-button-submit4 {
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    margin-right: 2px;
+}
+
+.qi-text-signature-profile-button-submit5 {
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    margin-right: 2px;
+}
+
+.qi-signature-profile-button-submit-and-save img {
+    transform: scale(.6);
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    -ms-transform: scale(.6);
+    -o-transform: scale(.6);
+}
+
+.qi-signature-profile-tab1 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+.qi-signature-profile-tab1-body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 20px;
+}
+
+.qi-signature-profile-action-file {
+    margin-bottom: 0px;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 cột, mỗi cột chia đều */
+    /* Khoảng cách giữa các ô */
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-container .full-width {
+    grid-column: 1 / 3;
+    /* Trải dài cả 2 cột */
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 cột, mỗi cột chia đều */
+    gap: 10px;
+    /* Khoảng cách giữa các ô */
+    max-width: 800px;
+    margin: auto;
+}
+
+.qi-custom-form-container-signature-profile {
+    width: 100% !important;
+    gap: 10px;
+    max-width: 100% !important;
+}
+
+.qi-text-label-input-signature-profile {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #171A1FFF;
+    margin-bottom: 5px;
+}
+
+.qi-star-tag {
+    color: red !important;
+}
+
+.qi-text-label-main-input-signature-profile {
+    all: unset;
+    border: 1px solid #BDC1CAFF;
+    width: calc(100% - 20px);
+    height: 36px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all .1s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+.qi-text-label-main-input-signature-profile:hover {
+    border: 1px solid rgb(60, 126, 239);
+}
+
+.qi-text-label-main-input-signature-profile:focus {
+    border: 1px solid rgb(60, 126, 239);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .1);
+}
+
+.form-group-custom-signature-profile {
+    margin-bottom: 0px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: #006eff;
+    /* Đổi màu viền khi focus */
+}
+
+.qi-sinature-profile-checkBox-top,
+input,
+label {
+    margin: 0px;
+}
+
+.qi-sinature-profile-checkBox-bottom,
+input,
+label {
+    margin: 0px;
+}
+
+.qi-sinature-profile-checkBox-top {
+    margin: 5px 0px 10px 0;
+}
+
+.qi-signature-profile-tab2 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    padding: 16px;
+}
+
+/* Đoạn lưu ý */
+.qi-signature-tab2-highlight {
+    font-style: italic;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* Checkbox và nhãn */
+.qi-signature-tab2-checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.qi-signature-tab2-checkbox-container input[type="checkbox"] {
+    margin-right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Layout của danh sách các checkbox */
+.qi-signature-tab2-file-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 16px;
+    padding-left: 20%;
+}
+
+/* Chọn tất cả */
+.qi-signature-tab2-select-all {
+    font-weight: bold;
+    margin: 12px 0 8px 0;
+    font-size: 14px;
+}
+
+.qi-signature-profile-tab2-text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #323743FF;
+}
+
+.qi-signature-profile-tab3 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    padding: 16px;
+}
+
+.qi-signature-profile-tab3-table {
+    margin-bottom: 5px;
+}
+
+.qi-signature-profile-tab4-table {
+    margin-bottom: 5px;
+}
+
+.qi-signature-profile-fixTableHead {
+    height: 92%;
+}
+
+.qi-signature-profile-tab4 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    padding: 16px;
+}
+
+.qi-signature-profile-tab5 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    padding: 16px;
+}
+
+.qi-signature-profile-button-tab {
+    width: 100%;
+    height: 46px;
+}
+
+.qi-signature-profile-button-add-obj-tab {
+    padding: 0 12px;
+    background: #1E64DDFF;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+
+.qi-signature-profile-button-submit-and-save-3 {
+    width: 140px;
+    height: 36px;
+    background: #1E64DDFF;
+    gap: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.qi-signature-profile-button-submit-and-save-3 img {
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+.qi-signature-profile-button-submit-and-save-3:hover {
+    opacity: .85;
+}
